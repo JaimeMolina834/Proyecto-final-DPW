@@ -1,0 +1,121 @@
+body {
+     background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+}
+
+
+/*Menu*/
+header{
+     width: 100%;
+     background: #4e94ab;
+ }
+ 
+ #btn-menu {
+     display: none;
+ }
+ 
+ header label {
+     display: none;
+     width: 30px;
+     height: 30px;
+     padding: 10px;
+     border-right: 1px solid #ffff;
+ }
+ 
+ header label:hover{
+     cursor: pointer;
+     background: rgba(0,0,0,0.3);
+ }
+ 
+ .menu ul {
+     margin: 0;
+     list-style: none;
+     padding: 0;
+     display: flex;
+     justify-content: flex-end;
+ }
+ 
+ .menu li {
+     border-right: 1px solid #ffff;
+ }
+ 
+ .menu li:hover {
+     background: rgba(0,0,0,0.3);
+ }
+ 
+ .menu li a {
+     display: block;
+     padding: 1px 20px;
+     color: #ffff;
+     text-decoration: none;
+     
+ }
+ 
+ @media (max-width:768px) {
+     header label {
+         display: block;
+     }
+ 
+     .menu {
+         position: absolute;
+         background: #4e94ab;
+         width: 70%;
+         margin-left: -70%;
+         transition: all 0.5s;
+     }
+ 
+     .menu ul {
+         flex-direction: column;
+     }
+ 
+     .menu li {
+         border-top: 1px solid #ffff;
+     }
+ 
+     #btn-menu:checked ~ .menu {
+         margin: 0;
+ 
+     }
+ 
+ }
+ /*Fin Menu*/
+
+.titulo {
+     font-size: 55px;
+     text-transform: uppercase;
+     letter-spacing: 7px;
+}
+
+.galeria img {
+     box-shadow: 0 8px 10px -4px rgba(0,0,0,.6);
+     border-radius: 15px;
+}
+
+.materialbox-caption {
+     bottom: 30px;
+     right: 0;
+     width: 40%;
+     height: auto;
+     padding: 10px;
+     margin: auto;
+     background: #000;
+     box-shadow: 5px 5px #fff;
+     font-size: 20px;
+     color: #fff;
+     line-height: 28px;
+}
+
+.galeria .col {
+     margin-bottom: 20px;
+}
+
+@media screen and (max-width: 600px){
+     .materialbox-caption {
+          width: 90%;
+     }
+}
+
+@media screen and (max-width: 992px){
+     .materialbox-caption {
+          width: 70%;
+     }
+}
